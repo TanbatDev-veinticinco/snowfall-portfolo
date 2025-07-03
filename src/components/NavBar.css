@@ -1,0 +1,156 @@
+.top-part {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.round {
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  display: block;
+  object-position: center center;
+}
+
+nav {
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  background-color: var(--body_background);
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  justify-content: space-between;
+  top: 0px;
+}
+
+.brand {
+  display: flex;
+  gap: 1rem;
+}
+
+.brand a {
+  color: var(--body_color);
+  font-size: 1.4rem;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+
+.brand a:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.nav-list li{
+  font-size: 1.2rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  align-items: center;
+  z-index: 1001;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 24px;
+  height: 3px;
+  background-color:var(--body_color);
+  transition: all 0.5s ease;
+}
+
+.header.scrolled .line1,
+.header.scrolled .line2,
+.header.scrolled .line3 {
+  background-color: var(--body_color) !important;
+  transition: background-color 0.5s ease;
+}
+
+.hamburger.open .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .line2 {
+  opacity: 0;
+}
+
+.hamburger.open .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  width: 100%;
+  top: 4.5rem;
+  left: 0;
+  background: var(--body_background);
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.mobile-menu a {
+  color: var(--link_color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  flex-direction: column;
+}
+
+.active-link {
+  font-weight: bolder;
+  color: var(--body_color);
+  opacity: 0.5;
+}
+
+.ul-link{
+  color: var(--body_color);
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-column {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}

@@ -1,0 +1,177 @@
+.hero-section {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.up-text {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-right: 2rem;
+}
+
+.up-text p {
+  font-size: 1.5rem;
+}
+
+.okie {
+  transition: all 0.5s ease-in-out;
+  color: var(--body_color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.okie:hover {
+  cursor: pointer;
+  transform: translateX(8px);
+  transition: all 0.5s ease-in-out;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--body_background);
+  border: none;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+.card-img {
+  position: relative;
+  object-fit: cover;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: var(--card_shadow);
+  opacity: 1;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.card-img:hover {
+  box-shadow: var(--card_hover);
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+}
+
+.card-img:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: var(--body_background);
+  border-radius: 20px;
+  color: var(--body_color);
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.card-body {
+  flex: 1;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--body_color);
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: var(--text_color);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ali {
+  color: var(--body_color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.ali:hover {
+  cursor: pointer;
+  transform: translateX(13px);
+}
+
+.write {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: 2rem;
+  }
+
+  .deck {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .up-text {
+    padding-top: 3rem;
+    text-align: left;
+    justify-content: left;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    margin: 0;
+  }
+
+  .ali {
+    display: none;
+  }
+
+  .write {
+    padding: 0.5rem 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .middle {
+    opacity: 1 !important;
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    z-index: 2;
+  }
+}

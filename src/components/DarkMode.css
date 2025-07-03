@@ -1,0 +1,7 @@
+.theme-toggle-btn{
+    border: none;
+    padding: 0.7rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    /* background-color: var(--body_color); */
+}

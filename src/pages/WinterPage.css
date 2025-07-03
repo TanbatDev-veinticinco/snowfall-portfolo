@@ -1,0 +1,97 @@
+.winter-sec {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1600px;
+  margin-top: 3rem;
+}
+
+.winter-cont {
+  width: 100%;
+}
+
+.win {
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0 20px 0px 0;
+  margin-bottom: 3.5rem;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  z-index: 5;
+}
+
+.win h2 {
+  text-align: start;
+}
+
+.win p {
+  text-align: start;
+}
+
+.wint {
+  display: flex;
+  gap: 4rem;
+}
+
+.winter {
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.008) 0px 0.301094px 1.02372px 0px;
+}
+
+.winter img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.about-winter {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: center;
+  width: 100%;
+  max-width: 220px;
+  overflow: visible;
+  padding: 20px 0 0;
+  position: sticky;
+  top: 80px;
+  z-index: 5;
+}
+
+.about-winter >* p{
+    color: var(--text_color);
+}
+
+@media (max-width: 768px) {
+  .winter-sec{
+    margin-top: 5rem;
+  }
+
+  .win{
+    margin-bottom: 1rem;
+  }
+
+  .wint{
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .about-winter{
+    position: relative;
+    top: 0px;
+  }
+}
