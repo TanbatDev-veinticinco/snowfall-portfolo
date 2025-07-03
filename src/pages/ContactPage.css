@@ -11,6 +11,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
+  max-width: 700px;
 }
 
 .conto > * p {
@@ -62,11 +64,10 @@
 .contact-icon {
   display: flex;
   gap: 1rem;
-  color: black;
 }
 
 .contact-icon a {
-  color: black;
+  color: var(--body_color);
   font-size: 1.2rem;
   opacity: 0.8;
   margin-top: 0.5rem;
@@ -92,6 +93,8 @@
     rgb(0, 0, 0) 87.5%,
     rgba(0, 0, 0, 0) 100%
   );
+  width: 100%;
+  max-width: 690px;
 }
 
 .caro img {
@@ -174,7 +177,6 @@
 
   .contact-page {
     flex-direction: column;
-    max-width: 600px;
     margin-top: 6rem;
   }
 
